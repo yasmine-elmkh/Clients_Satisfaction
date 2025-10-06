@@ -88,7 +88,7 @@ Quick Start
 Clone the repository
 
 bash
-git clone https://github.com/your-username/customer-satisfaction-prediction.git
+git clone https://github.com/yasmine-elmkh/Clients_Satisfaction.git
 cd customer-satisfaction-prediction
 Create virtual environment (Recommended)
 
@@ -125,15 +125,15 @@ Generate predictions on historical data
 Save trained models for deployment
 
 python
-# In notebook.ipynb
-# The notebook automatically:
-# - Loads and cleans 9 datasets
-# - Creates 15+ predictive features
-# - Trains 4 ML algorithms
-# - Selects best performer (XGBoost)
-# - Saves models for production
+### In notebook.ipynb
+ The notebook automatically:
+ - Loads and cleans 9 datasets
+ - Creates 15+ predictive features
+ - Trains 4 ML algorithms
+ - Selects best performer (XGBoost)
+ - Saves models for production
 2. Interactive Dashboard
-Access the Streamlit app at http://localhost:8501
+Access the Streamlit app
 
 Main Features:
 
@@ -160,13 +160,56 @@ Order day and shipping cost
 
 Get instant satisfaction prediction with confidence score
 
-📊 Model Performance
-Algorithm Comparison
-Model	F1-Score	Precision	Recall	Training Time
-XGBoost	0.8632	0.854	0.873	45s
-LightGBM	0.8587	0.849	0.869	32s
-Random Forest	0.8456	0.837	0.855	68s
-SVM	0.8321	0.821	0.844	120s
+<div align="center">
+
+<h2>📊 Model Performance</h2>
+<h3>Algorithm Comparison</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>F1-Score</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>Training Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XGBoost</td>
+      <td>0.8632</td>
+      <td>0.854</td>
+      <td>0.873</td>
+      <td>45s</td>
+    </tr>
+    <tr>
+      <td>LightGBM</td>
+      <td>0.8587</td>
+      <td>0.849</td>
+      <td>0.869</td>
+      <td>32s</td>
+    </tr>
+    <tr>
+      <td>Random Forest</td>
+      <td>0.8456</td>
+      <td>0.837</td>
+      <td>0.855</td>
+      <td>68s</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>0.8321</td>
+      <td>0.821</td>
+      <td>0.844</td>
+      <td>120s</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+
 Key Features Impact
 Delivery Time 🚚: Strongest predictor (25% importance)
 
