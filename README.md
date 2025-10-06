@@ -45,8 +45,6 @@ This project delivers an end-to-end machine learning solution for predicting cus
 - **Actionable Insights**: Specific recommendations based on prediction outcomes
 - **Batch Processing**: Support for multiple predictions simultaneously
 
-## 🏗️ Architecture
-
 ```mermaid
 graph TB
     A[Raw Data] --> B[Data Preprocessing]
