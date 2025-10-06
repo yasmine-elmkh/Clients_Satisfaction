@@ -78,21 +78,7 @@ Evaluation: Stratified train/validation/test split
 
 Deployment: Interactive dashboard and prediction API
 
-📁 Project Structure
-text
-customer-satisfaction-prediction/
-├── 📊 dataset/
-│   ├── raw/                          # Original datasets
-│   └── final_dataset_with_predictions.csv
-├── 🧠 models/                        # Trained models
-│   ├── pipeline_full.joblib
-│   ├── best_model_XGBoost.joblib
-│   ├── preprocessor.joblib
-│   └── model_*.joblib
-├── 📓 notebook.ipynb                 # Main analysis notebook
-├── 🎯 app.py                        # Streamlit dashboard
-├── 📋 requirements.txt
-└── 📄 README.md
+
 ⚙️ Installation
 Prerequisites
 Python 3.8 or higher
