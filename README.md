@@ -210,8 +210,6 @@ Pricing Strategy: Adjust pricing based on satisfaction thresholds
 
 Inventory Management: Stock products with higher satisfaction rates
 
-Product Development
-Feature Prioritization: Focus on satisfaction-driving characteristics
 
 Quality Control: Monitor product metrics affecting satisfaction
 
@@ -242,16 +240,6 @@ Preprocessing: StandardScaler for numeric, OneHotEncoder for categorical
 Validation: Stratified 70-15-15 split with random_state=42
 
 Metric: F1-score optimized for imbalanced classes
-
-🚀 Deployment
-Production Setup
-Model Serving: Deploy pipeline_full.joblib to cloud environment
-
-API Layer: Create FastAPI or Flask endpoint for predictions
-
-Monitoring: Implement model drift detection and retraining pipeline
-
-Scaling: Containerize with Docker for horizontal scaling
 
 
 📈 Results & Impact
