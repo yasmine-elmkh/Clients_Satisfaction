@@ -14,46 +14,37 @@
 
 </div>
 
----
-
 ## 📊 Overview
 
-This project provides an **end-to-end machine learning solution** to predict customer satisfaction in e-commerce. The system analyzes **order patterns, delivery performance, and product characteristics** to forecast customer satisfaction with **86.3% F1-score** accuracy.
+This project delivers an end-to-end machine learning solution for predicting customer satisfaction in e-commerce. The system analyzes order patterns, delivery performance, and product characteristics to forecast customer satisfaction with **86.3% F1-score** accuracy.
 
 ### 🎯 Business Value
 
-- **Predict** customer satisfaction before reviews are submitted  
-- **Identify** key drivers of customer dissatisfaction  
-- **Optimize** delivery processes and product offerings  
-- **Increase** customer retention through proactive interventions  
-
----
+- **Predict** customer satisfaction before reviews are submitted
+- **Identify** key drivers of customer dissatisfaction
+- **Optimize** delivery processes and product offerings
+- **Increase** customer retention through proactive interventions
 
 ## 🚀 Features
 
 ### 🤖 Machine Learning
-- Multi-algorithm comparison: **XGBoost, LightGBM, Random Forest, SVM**  
-- Advanced Feature Engineering: Delivery timing, product density, temporal features  
-- Automated Preprocessing: Missing values handling, categorical encoding, scaling  
-- Model Persistence: Save/load trained models for production use  
+- **Multi-algorithm comparison**: XGBoost, LightGBM, Random Forest, SVM
+- **Advanced Feature Engineering**: Delivery timing, product density, temporal features
+- **Automated Preprocessing**: Handling missing values, categorical encoding, scaling
+- **Model Persistence**: Save/load trained models for production use
 
 ### 📊 Analytics Dashboard
-- Interactive Visualizations: Satisfaction distribution, delivery analysis, correlation studies  
-- Real-time Filtering: Dynamic data exploration by multiple criteria  
-- Performance Metrics: Model accuracy, F1-scores, confusion matrices  
-- Export Capabilities: Download filtered datasets and reports  
+- **Interactive Visualizations**: Satisfaction distribution, delivery analysis, correlation studies
+- **Real-time Filtering**: Dynamic data exploration by multiple criteria
+- **Performance Metrics**: Model accuracy, F1-scores, confusion matrices
+- **Export Capabilities**: Download filtered datasets and reports
 
 ### 🔮 Prediction Engine
-- Real-time Predictions: Instant satisfaction scoring for new orders  
-- Probability Estimates: Confidence levels for each prediction  
-- Actionable Insights: Specific recommendations based on predictions  
-- Batch Processing: Support for multiple predictions simultaneously  
+- **Real-time Predictions**: Instant satisfaction scoring for new orders
+- **Probability Estimates**: Confidence levels for each prediction
+- **Actionable Insights**: Specific recommendations based on prediction outcomes
+- **Batch Processing**: Support for multiple predictions simultaneously
 
----
-
-## 🏗️ Architecture
-
-```mermaid
 graph TB
     A[Raw Data] --> B[Data Preprocessing]
     B --> C[Feature Engineering]
@@ -62,7 +53,7 @@ graph TB
     E --> F[Best Model Selection]
     F --> G[Streamlit Dashboard]
     F --> H[Prediction API]
-
+    
     subgraph "ML Pipeline"
         B
         C
@@ -70,9 +61,9 @@ graph TB
         E
         F
     end
-Data Flow:
-
-Data Ingestion: 9 separate datasets from the e-commerce platform
+    
+    Data Flow
+Data Ingestion: 9 separate datasets from e-commerce platform
 
 Cleaning & Validation: Handle missing values, outliers, inconsistencies
 
@@ -84,30 +75,49 @@ Evaluation: Stratified train/validation/test split
 
 Deployment: Interactive dashboard and prediction API
 
-⚙️ Installation
+
+## ⚙️ Installation
 Prerequisites
-Python 3.8+
+Python 3.8 or higher
 
 4GB RAM minimum
 
 500MB disk space
 
 Quick Start
+Clone the repository
+
 bash
-Copier le code
 git clone https://github.com/yasmine-elmkh/Clients_Satisfaction.git
 cd customer-satisfaction-prediction
+Create virtual environment (Recommended)
+
+bash
 python -m venv satisfaction_env
 source satisfaction_env/bin/activate  # On Windows: satisfaction_env\Scripts\activate
+Install dependencies
+
+bash
 pip install -r requirements.txt
+Run the analysis notebook
+
+bash
 jupyter notebook notebook.ipynb
+Launch the dashboard
+
+bash
 streamlit run app.py
 Manual Installation
+If requirements.txt is not available:
+
 bash
-Copier le code
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost lightgbm streamlit joblib
-🎮 Usage
-1️⃣ Data Analysis & Model Training
+
+
+## 🎮 Usage
+1. Data Analysis & Model Training
+Execute the Jupyter notebook to:
+
 Preprocess raw e-commerce data
 
 Train and compare multiple ML models
@@ -117,33 +127,93 @@ Generate predictions on historical data
 Save trained models for deployment
 
 python
-Copier le code
-# In notebook.ipynb
-# Automatically:
-# - Loads & cleans 9 datasets
-# - Creates 15+ predictive features
-# - Trains 4 ML algorithms
-# - Selects best performer (XGBoost)
-# - Saves models for production
-2️⃣ Interactive Dashboard
-KPI Overview: Satisfaction rates, delivery metrics, pricing
+### In notebook.ipynb
+ The notebook automatically:
+ - Loads and cleans 9 datasets
+ - Creates 15+ predictive features
+ - Trains 4 ML algorithms
+ - Selects best performer (XGBoost)
+ - Saves models for production
 
-Data Exploration: Interactive filters and visualizations
+2. Interactive Dashboard
+Access the Streamlit app
 
-Raw Data: Exportable tables with predictions
+Main Features:
 
-Real-time Predictions: Satisfaction scoring for new orders
+📈 KPI Overview: Satisfaction rates, delivery metrics, pricing
 
-3️⃣ Making Predictions
+🔍 Data Exploration: Interactive filters and visualizations
+
+📋 Raw Data: Exportable data tables with predictions
+
+🔮 Real-time Predictions: Satisfaction scoring for new orders
+
+3. Making Predictions
+Through Dashboard:
+
 Navigate to "Prédiction Temps Réel" tab
 
-Input order characteristics: delivery time, product price, density, shipping cost, order day
+Input order characteristics:
+
+Delivery time estimate
+
+Product price and density
+
+Order day and shipping cost
 
 Get instant satisfaction prediction with confidence score
 
-📊 Model Performance
-<div align="center"> <table> <thead> <tr> <th>Model</th> <th>F1-Score</th> <th>Precision</th> <th>Recall</th> <th>Training Time</th> </tr> </thead> <tbody> <tr> <td>🚀 XGBoost</td> <td><img src="https://img.shields.io/badge/F1-0.8632-brightgreen" alt="F1-Score"></td> <td><img src="https://img.shields.io/badge/Precision-0.854-blue" alt="Precision"></td> <td><img src="https://img.shields.io/badge/Recall-0.873-orange" alt="Recall"></td> <td><img src="https://img.shields.io/badge/45s-lightgrey" alt="Training Time"></td> </tr> <tr> <td>💡 LightGBM</td> <td><img src="https://img.shields.io/badge/F1-0.8587-brightgreen" alt="F1-Score"></td> <td><img src="https://img.shields.io/badge/Precision-0.849-blue" alt="Precision"></td> <td><img src="https://img.shields.io/badge/Recall-0.869-orange" alt="Recall"></td> <td><img src="https://img.shields.io/badge/32s-lightgrey" alt="Training Time"></td> </tr> <tr> <td>🌲 Random Forest</td> <td><img src="https://img.shields.io/badge/F1-0.8456-yellowgreen" alt="F1-Score"></td> <td><img src="https://img.shields.io/badge/Precision-0.837-blue" alt="Precision"></td> <td><img src="https://img.shields.io/badge/Recall-0.855-orange" alt="Recall"></td> <td><img src="https://img.shields.io/badge/68s-lightgrey" alt="Training Time"></td> </tr> <tr> <td>⚡ SVM</td> <td><img src="https://img.shields.io/badge/F1-0.8321-red" alt="F1-Score"></td> <td><img src="https://img.shields.io/badge/Precision-0.821-blue" alt="Precision"></td> <td><img src="https://img.shields.io/badge/Recall-0.844-orange" alt="Recall"></td> <td><img src="https://img.shields.io/badge/120s-lightgrey" alt="Training Time"></td> </tr> </tbody> </table> </div>
-🔑 Key Features Impact
+<div align="center">
+
+<h2>📊 Model Performance</h2>
+<h3>Algorithm Comparison</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>F1-Score</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>Training Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XGBoost</td>
+      <td>0.8632</td>
+      <td>0.854</td>
+      <td>0.873</td>
+      <td>45s</td>
+    </tr>
+    <tr>
+      <td>LightGBM</td>
+      <td>0.8587</td>
+      <td>0.849</td>
+      <td>0.869</td>
+      <td>32s</td>
+    </tr>
+    <tr>
+      <td>Random Forest</td>
+      <td>0.8456</td>
+      <td>0.837</td>
+      <td>0.855</td>
+      <td>68s</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>0.8321</td>
+      <td>0.821</td>
+      <td>0.844</td>
+      <td>120s</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+### Key Features Impact
 Delivery Time 🚚: Strongest predictor (25% importance)
 
 Product Price 💰: Second most important (18%)
@@ -154,7 +224,7 @@ Order Day 📅: Weekend vs weekday patterns
 
 Product Density ⚖️: Physical characteristics matter
 
-🎯 Business Applications
+### 🎯 Business Applications
 Customer Service
 Early Warning: Identify at-risk customers before churn
 
@@ -169,11 +239,12 @@ Pricing Strategy: Adjust pricing based on satisfaction thresholds
 
 Inventory Management: Stock products with higher satisfaction rates
 
+
 Quality Control: Monitor product metrics affecting satisfaction
 
 Supplier Evaluation: Rate vendors based on customer satisfaction
 
-🔧 Technical Details
+### 🔧 Technical Details
 Data Sources
 Orders: 100,000+ historical transactions
 
@@ -185,8 +256,7 @@ Reviews: 1-5 star ratings as satisfaction labels
 
 Feature Engineering
 python
-Copier le code
-# Key features created:
+### Key features created:
 df['delivery_time_days'] = (delivery_date - purchase_date).dt.days
 df['product_density'] = weight_g / (length_cm * height_cm * width_cm)
 df['purchase_weekday'] = purchase_date.dt.weekday
@@ -200,21 +270,20 @@ Validation: Stratified 70-15-15 split with random_state=42
 
 Metric: F1-score optimized for imbalanced classes
 
-📈 Results & Impact
+
+## 📈 Results & Impact
+Performance Metrics
 Accuracy: 87.1% on test set
 
-Precision: 85.4%
+Precision: 85.4% (minimizing false positives)
 
-Recall: 87.3%
+Recall: 87.3% (capturing true dissatisfied customers)
 
 Business Impact: 23% reduction in customer churn in pilot deployment
 
 Case Study: E-commerce Retailer
-
 Challenge: High return rates and negative reviews for specific product categories
-
 Solution: Implemented satisfaction prediction for pre-shipment quality control
-
 Results:
 
 31% reduction in product returns
