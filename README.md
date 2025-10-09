@@ -245,17 +245,23 @@ Quality Control: Monitor product metrics affecting satisfaction
 Supplier Evaluation: Rate vendors based on customer satisfaction
 
 ### 🔧 Technical Details
-Data Sources
-Orders: 100,000+ historical transactions
 
-Products: 30,000+ SKUs with physical attributes
+#### 🗂️ Data Sources
+The datasets used in this project come from the public Kaggle dataset:
 
-Customers: Geographic and behavioral data
+👉 [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
-Reviews: 1-5 star ratings as satisfaction labels
+It contains multiple CSV files, including:
+- `olist_orders_dataset.csv` — order metadata  
+- `olist_order_items_dataset.csv` — product and delivery information  
+- `olist_order_reviews_dataset.csv` — customer review scores  
+- `olist_products_dataset.csv` — product characteristics  
+- `olist_sellers_dataset.csv` — seller details  
+- `olist_customers_dataset.csv` — customer geographic data  
+- `olist_order_payments_dataset.csv` — payment methods  
+- `olist_geolocation_dataset.csv` — customer/seller location data  
+- `product_category_name_translation.csv` — category translations  
 
-Feature Engineering
-python
 ### Key features created:
 df['delivery_time_days'] = (delivery_date - purchase_date).dt.days
 df['product_density'] = weight_g / (length_cm * height_cm * width_cm)
