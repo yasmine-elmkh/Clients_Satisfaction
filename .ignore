@@ -1,9 +1,0 @@
-# Ignorer les datasets lourds
-dataset/
-*.csv
-*.joblib
-
-# Ignorer les fichiers temporaires
-__pycache__/
-*.pkl
-*.log
