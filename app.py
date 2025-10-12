@@ -11,7 +11,7 @@ warnings.filterwarnings('ignore')
 
 # Configuration
 st.set_page_config(
-    page_title="Dashboard Clients Satisfaction Prediction ", 
+    page_title="Dashboard Clients Satisfaction Prediction", 
     layout="wide",
     page_icon="📊"
 )
