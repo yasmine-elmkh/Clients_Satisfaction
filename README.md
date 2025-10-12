@@ -1,4 +1,4 @@
-# 🎯 Customer Satisfaction Prediction - E-commerce Analytics
+# 🎯 Clients Satisfaction Prediction - E-commerce Analytics
 
 <div align="center">
  
